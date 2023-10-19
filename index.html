@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* CSS Reset */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* General Layout */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #d9d2d2;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Header */
+header {
+  background: #35424a;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  width: 50%;
+}
+
+nav {
+  float: right;
+  width: 50%;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Showcase */
+#showcase {
+  background: url('news.jpg') no-repeat center center/cover;
+  height: 300px;
+  text-align: center;
+  color: #020202;
+}
+
+#showcase h1 {
+  margin-top: 100px;
+  font-size: 50px;
+}
+
+#showcase p {
+  font-size: 20px;
+}
+
+/* News Section */
+.news {
+  overflow-y: scroll;
+  max-height: 600px;
+  margin-top: 20px;
+}
+
+.category {
+  background-color: #c4b5b5;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.title {
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+
+.content {
+  margin-bottom: 20px;
+}
+
+/* Sidebar */
+aside {
+  float: right;
+  width: 20%;
+  background: #35424a;
+  color: #ffffff;
+  padding: 20px;
+  height: 500px;
+}
+
+/* Footer */
+footer {
+  background: #35424a;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  clear: both;
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="logo">
+      <h2>City Times</h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<div id="showcase">
+  <div class="container">
+    <h1>Welcome to City Times</h1>
+    <p>Stay updated with the latest news</p>
+  </div>
+</div>
+<div class="container">
+  <div class="news">
+    <div class="category">
+      <h3>Politics</h3>
+      <div class="title">Title</div>
+      <div class="content">Content of the news article...</div>
+    </div>
+    <div class="category">
+      <h3>Technology</h3>
+      <div class="title">Title</div>
+      <div class="content">Content of the news article...</div>
+    </div>
+    <div class="category">
+        <h3>Business</h3>
+        <div class="title">Title</div>
+        <div class="content">Content of the news article...</div>
+      </div>
+      <div class="category">
+        <h3>Sports</h3>
+        <div class="title">Title</div>
+        <div class="content">Content of the news article...</div>
+      </div>
+      <div class="category">
+        <h3>Entertainment</h3>
+        <div class="title">Title</div>
+        <div class="content">Content of the news article...</div>
+      </div>
+  </div>
+<aside>
+  <h2>About Us</h2>
+  <p>Welcome to City Times, your source for the latest news and updates.</p>
+</aside>
+<footer>
+  <p>City Times &copy; 2023</p>
+</footer>
+</div>
+</body>
+</html>
